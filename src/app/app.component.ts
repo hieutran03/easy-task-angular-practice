@@ -15,10 +15,7 @@ export class AppComponent {
   selectedUserId!: string;
 
   get selectedUser(){
-    const user = this.users.find((user)=>user.id === this.selectedUserId);
-    if(!user)
-      throw new Error("No user is found");
-    return user;
+    return this.users.find((user)=>user.id === this.selectedUserId);  
   }
 
   onSelectedUser(id: string){

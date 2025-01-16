@@ -32,6 +32,8 @@
       [name]="users[3].name"
       (select) = "onSelectedUser($event)"
     />
-  </li>
+  </li>  
  </ul>
+ <app-task [name] = "selectedUser.name"></app-task>
+
 </main>

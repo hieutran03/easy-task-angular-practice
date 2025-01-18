@@ -14,7 +14,7 @@ export class NewTaskComponent {
   @Input() userId!: string;
   @Output() close = new EventEmitter();
 
-  tasksService = inject(TasksService);
+  private tasksService = inject(TasksService);
   enteredTitle = '';
   enteredSummary = '';
   enteredDate = '';
